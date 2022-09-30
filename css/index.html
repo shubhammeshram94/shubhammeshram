@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>404 Error</title>
+
+    <link rel="stylesheet" href="https://codepen.io/robinselmer/pen/vJjbOZ.css">
+
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="terminal">
+      <h1>Error <span class="errorcode">404</span></h1>
+      <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable</ü>
+      <p class="output">Please try <a href="https://www.shubhammeshram.tk/">this link</a> or <a href="https://www.shubhammeshram.tk/#contact">this link</a></p>
+      <p class="output">Good luck</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function () {
+    
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+
+
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+  </body>
+</html>
